@@ -159,6 +159,7 @@ MonoBehaviour:
   Note: 'Note Text Info:  Entered text will appear here'
   inputField: {fileID: 1717524182925532943}
   textDisplay: {fileID: 8552140033883765809}
+  StarOject: {fileID: 1517545619891756}
   distanceToAppear: 0.01
 --- !u!1 &546194972403727357
 GameObject:
@@ -702,7 +703,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114593759754933046}
-        m_MethodName: Awake
+        m_MethodName: UpdateButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

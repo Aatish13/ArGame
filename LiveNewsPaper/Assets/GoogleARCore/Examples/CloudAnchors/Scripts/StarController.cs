@@ -41,9 +41,9 @@ namespace GoogleARCore.Examples.CloudAnchors
 
         public string Note;
        public GameObject inputField;
-        public GameObject textDisplay; 
-
-
+        public GameObject textDisplay;
+        public GameObject StarOject;
+        private GameObject NewStar;
         Transform mainCamTransform; // Stores the FPS camera transform
         private bool visible = true;
         public float distanceToAppear = 2F;
@@ -66,6 +66,17 @@ private void Start()
         /// <summary>
         /// The Unity Awake() method.
         /// </summary>
+        /// 
+        public void UpdateButtonClick()
+        {
+            Note = inputField.GetComponent<Text>().text + "\nRandom no=" + (Random.Range(0, 100));
+
+           
+            textDisplay.GetComponent<Text>().text = Note;
+            StarOject = Instantiate(StarOject);
+       
+            NetworkServer.Spawn(StarOject);
+        }
         public void Awake()
         {
             m_CloudAnchorsExampleController =
@@ -73,9 +84,7 @@ private void Start()
                     .GetComponent<CloudAnchorsExampleController>();
             m_StarMesh = transform.Find("StarMesh").gameObject;
             m_NoteMesh = transform.Find("NoteMesh").gameObject;
-            Note = inputField.GetComponent<Text>().text +"\nRandom no="+ (Random.Range(0, 100));
-            textDisplay.GetComponent<Text>().text = Note;
-
+           
             m_NoteMesh.SetActive(false);
             m_StarMesh.SetActive(false);
         }

@@ -88,6 +88,7 @@ namespace GoogleARCore.Examples.CloudAnchors
 
             // Spawn the object in all clients.
 #pragma warning disable 618
+            
             NetworkServer.Spawn(starObject);
 #pragma warning restore 618
         }
