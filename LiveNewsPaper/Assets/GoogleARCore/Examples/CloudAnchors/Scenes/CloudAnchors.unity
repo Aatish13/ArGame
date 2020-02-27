@@ -591,6 +591,7 @@ MonoBehaviour:
   StartScreen: {fileID: 489292718}
   ARScreen: {fileID: 620220164}
   StatusScreen: {fileID: 1030966859}
+  isHost: 0
 --- !u!4 &265054091
 Transform:
   m_ObjectHideFlags: 0

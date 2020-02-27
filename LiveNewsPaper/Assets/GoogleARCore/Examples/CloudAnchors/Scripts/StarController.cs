@@ -29,7 +29,10 @@ namespace GoogleARCore.Examples.CloudAnchors
     /// A controller for the Star object that handles setting mesh after the world origin has been
     /// placed.
     /// </summary>
-    public class StarController : MonoBehaviour
+    /// 
+#pragma warning disable 618
+    public class StarController : NetworkBehaviour
+#pragma warning disable 618
     {
         /// <summary>
         /// The star mesh object.
@@ -38,7 +41,7 @@ namespace GoogleARCore.Examples.CloudAnchors
         /// </summary>
         private GameObject m_StarMesh;
         private GameObject m_NoteMesh;
-
+        [SyncVar]
         public string Note;
        public GameObject inputField;
         public GameObject textDisplay;
@@ -54,28 +57,25 @@ namespace GoogleARCore.Examples.CloudAnchors
         /// </summary>
         private CloudAnchorsExampleController m_CloudAnchorsExampleController;
 
-private void Start()
+
+        private void Start()
     {
             Random.InitState(12345); //This is the seed
 
             mainCamTransform = Camera.main.transform;//Get camera transform reference
-        objRenderer =m_StarMesh.GetComponent<Renderer>(); //Get render reference
-            NoteobjRenderer = m_NoteMesh.GetComponent<Renderer>();
-           
-    }
+            objRenderer =m_StarMesh.GetComponent<Renderer>(); //Get render reference
+            NoteobjRenderer = m_NoteMesh.GetComponent<Renderer>();//Get render reference
+
+        }
         /// <summary>
         /// The Unity Awake() method.
         /// </summary>
         /// 
         public void UpdateButtonClick()
         {
-            Note = inputField.GetComponent<Text>().text + "\nRandom no=" + (Random.Range(0, 100));
-
-           
+            Note = inputField.GetComponent<Text>().text;
             textDisplay.GetComponent<Text>().text = Note;
-            StarOject = Instantiate(StarOject);
-       
-            NetworkServer.Spawn(StarOject);
+          
         }
         public void Awake()
         {
@@ -94,8 +94,9 @@ private void Start()
         /// </summary>
         public void Update()
         {
-         //   Note = inputField.GetComponent<Text>().text;
-           // textDisplay.GetComponent<Text>().text = Note;
+          
+
+            textDisplay.GetComponent<Text>().text = Note;
 
             if (m_StarMesh.activeSelf)
             {
@@ -128,7 +129,7 @@ private void Start()
             if (!visible)
             {
                 objRenderer.enabled = true; // Show Object
-               //     NoteobjRenderer.enabled = true;
+              //  NoteobjRenderer.enabled = true;
                 visible = true;
                 Debug.Log("Visible");
             }
@@ -136,7 +137,7 @@ private void Start()
         else if (visible)
         {
             objRenderer.enabled = false; // Hide Object
-                //NoteobjRenderer.enabled = false;
+          //  NoteobjRenderer.enabled = false;
             visible = false;
             Debug.Log("InVisible");
         }
