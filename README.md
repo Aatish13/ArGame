@@ -4,7 +4,7 @@ Deploying AR-Game
   It's same as deploying any other unity application.
   https://developers.google.com/ar/develop/unity/quickstart-android
   
-## After Deploying/Building the application one can easily install it on any android device can play with it.
+#### After Deploying/Building the application, one can easily install it on any android device can play with it.
 
 # What does AR-Game ~Tresure Hunt does?
   - This application is same as Tradditional Treasure Hunt Game,but it is digitilize version of that game with AR Support which gives users 
