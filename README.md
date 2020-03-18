@@ -2,7 +2,11 @@
 
 Deploying AR-Game
   It's same as deploying any other unity application.
-  https://developers.google.com/ar/develop/unity/quickstart-android
+  
+      https://developers.google.com/ar/develop/unity/quickstart-android
+                          OR
+       One Can Download apk from here: https://mega.nz/#!S1IS0KJY
+                                  
   
 #### After Deploying/Building the application, one can easily install it on any android device can play with it.
 
@@ -26,3 +30,4 @@ Deploying AR-Game
 ## Placing Anchor
 ![Anchor](https://user-images.githubusercontent.com/42675676/76992066-a729a780-6970-11ea-8f6f-21e11e31be09.jpeg)
 
+##### Note: Our application is further development of one of tutorials/pre-designed template designed Google ARCore
