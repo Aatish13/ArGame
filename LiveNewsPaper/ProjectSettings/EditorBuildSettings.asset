@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/CloudAnchors/Scenes/CloudAnchors.unity
+    guid: 83fb41cc294e74bdea57537befa00ffc
   m_configObjects: {}
