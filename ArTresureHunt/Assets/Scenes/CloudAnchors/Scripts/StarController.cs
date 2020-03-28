@@ -41,6 +41,11 @@ namespace GoogleARCore.Examples.CloudAnchors
         /// </summary>
         private GameObject m_StarMesh;
         private GameObject m_NoteMesh;
+        private GameObject m_ChestMesh;
+         private GameObject m_OpenChestMesh;
+          private GameObject m_CoinInChestMesh;
+          private GameObject m_OpenButtonMesh;
+
         [SyncVar]
         public string Note;
        public GameObject inputField;
@@ -52,6 +57,8 @@ namespace GoogleARCore.Examples.CloudAnchors
         public float distanceToAppear = 2F;
         Renderer objRenderer;
         Renderer NoteobjRenderer;
+        Renderer ChestobjRenderer;
+        int isChestOpen=0;
         /// <summary>
         /// The Cloud Anchors example controller.
         /// </summary>
@@ -65,6 +72,7 @@ namespace GoogleARCore.Examples.CloudAnchors
             mainCamTransform = Camera.main.transform;//Get camera transform reference
             objRenderer =m_StarMesh.GetComponent<Renderer>(); //Get render reference
             NoteobjRenderer = m_NoteMesh.GetComponent<Renderer>();//Get render reference
+            ChestobjRenderer = m_ChestMesh.GetComponent<Renderer>();//Get render reference
 
         }
         /// <summary>
@@ -77,6 +85,17 @@ namespace GoogleARCore.Examples.CloudAnchors
             textDisplay.GetComponent<Text>().text = Note;
           
         }
+        public void OpenChestButtonClick()
+        {
+             m_ChestMesh.SetActive(false);
+            m_StarMesh.SetActive(true);
+            m_NoteMesh.SetActive(true);
+            m_CoinInChestMesh.SetActive(true);
+            m_OpenChestMesh.SetActive(true);
+            isChestOpen=1;
+          //  ChestobjRenderer= m_OpenChestMesh.GetComponent<Renderer>();
+          
+        }
         public void Awake()
         {
             m_CloudAnchorsExampleController =
@@ -84,7 +103,15 @@ namespace GoogleARCore.Examples.CloudAnchors
                     .GetComponent<CloudAnchorsExampleController>();
             m_StarMesh = transform.Find("StarMesh").gameObject;
             m_NoteMesh = transform.Find("NoteMesh").gameObject;
-           
+            m_ChestMesh = transform.Find("chest_close").gameObject;
+            m_OpenChestMesh = transform.Find("chest_open").gameObject;
+            m_CoinInChestMesh = transform.Find("coins").gameObject;
+            m_OpenButtonMesh=transform.Find("OpenButton").gameObject;
+
+            m_OpenButtonMesh.SetActive(false);
+            m_OpenChestMesh.SetActive(false);
+            m_CoinInChestMesh.SetActive(false);
+            m_ChestMesh.SetActive(false);
             m_NoteMesh.SetActive(false);
             m_StarMesh.SetActive(false);
         }
@@ -95,7 +122,6 @@ namespace GoogleARCore.Examples.CloudAnchors
         public void Update()
         {
           
-
             textDisplay.GetComponent<Text>().text = Note;
 
             if (m_StarMesh.activeSelf)
@@ -111,12 +137,57 @@ namespace GoogleARCore.Examples.CloudAnchors
                  disappearChecker();
                 return;
             }
-            //           
-
-            disappearChecker();
+            //    
+            
             m_StarMesh.SetActive(true);
-            m_NoteMesh.SetActive(true);
+            m_ChestMesh.SetActive(true);
+            chestVisiblity(true);
+            disappearChecker();
+            }
+
+        private void chestVisiblity(bool val)
+        {
+            if(isChestOpen==0)
+            {
+                if(val){
+                    objRenderer.enabled = true; // Show Object     
+                    ChestobjRenderer.enabled=true;
+                    m_NoteMesh.SetActive(false);
+                    m_CoinInChestMesh.SetActive(false);
+                    m_OpenChestMesh.SetActive(false);
+                  m_OpenButtonMesh.SetActive(true);
+                }
+                else{
+                     objRenderer.enabled = false; // hide Object
+                    ChestobjRenderer.enabled=false;
+                    m_NoteMesh.SetActive(false);
+                    m_CoinInChestMesh.SetActive(false);
+                    m_OpenChestMesh.SetActive(false);
+                  m_OpenButtonMesh.SetActive(false);
+                }
+
+            }else{
+                  if(val)
+                  {
+                      m_OpenButtonMesh.SetActive(true);
+                      objRenderer.enabled = false; // Show Object
+                    ChestobjRenderer.enabled=false;
+                    m_NoteMesh.SetActive(true);
+                    m_CoinInChestMesh.SetActive(true);
+                    m_OpenChestMesh.SetActive(true);
+                  }        
+                else{  
+                    objRenderer.enabled = false; //Hide Object
+                    ChestobjRenderer.enabled=false;
+                    m_NoteMesh.SetActive(false);
+                    m_CoinInChestMesh.SetActive(false);
+                    m_OpenChestMesh.SetActive(false);
+                    m_OpenButtonMesh.SetActive(false);
+                  }
+            }
+
         }
+
         private void disappearChecker()
     {
         float distance = Vector3.Distance(mainCamTransform.position, transform.position);
@@ -128,24 +199,21 @@ namespace GoogleARCore.Examples.CloudAnchors
         {
             if (!visible)
             {
-                objRenderer.enabled = true; // Show Object
-                
-                m_NoteMesh.SetActive(true);
                 //NoteobjRenderer.enabled = true;
+                chestVisiblity(true);
                 visible = true;
                 Debug.Log("Visible");
             }
         }
         else if (visible)
         {
-            objRenderer.enabled = false; // Hide Object
-           
-            m_NoteMesh.SetActive(false); 
+            chestVisiblity(false);
             //m_NoteMesh.SetActive(false);
-         //  NoteobjRenderer.enabled = false;
+            //NoteobjRenderer.enabled = false;
             visible = false;
             Debug.Log("InVisible");
         }
     }
+
     }
 }
