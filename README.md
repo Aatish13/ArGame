@@ -30,4 +30,13 @@ Deploying AR-Game
 ## Placing Anchor
 ![Anchor](https://user-images.githubusercontent.com/42675676/76992066-a729a780-6970-11ea-8f6f-21e11e31be09.jpeg)
 
+
+
+# ARGame ~ LiveBook
+## What Does it do??
+  This application changes the way one reads book by augmenting videos to the book.
+  Given a book (Tryst with Reality) whenever a particular image appears in front of this application, if in DB then it augments corresponding video.
+  
+  
+
 ##### Note: Our application is further development of one of tutorials/pre-designed template designed Google ARCore
