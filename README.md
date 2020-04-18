@@ -39,7 +39,8 @@ Deploying AR-Game
   ![LiveBook](https://user-images.githubusercontent.com/42675676/79630758-b5d2cc80-8171-11ea-96b6-5d490a1e82f1.PNG)
 
 # ARGame ~ FaceT
-  Face Thoughts
+  Face Thoughts.
+  #
   This application scans your face and generate random thoughts and displays it.
 
   ![S1](https://user-images.githubusercontent.com/42675676/79630899-cdf71b80-8172-11ea-8f00-48637ebe2a49.jpeg)
