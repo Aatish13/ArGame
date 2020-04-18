@@ -6,6 +6,8 @@ Deploying AR-Game
       https://developers.google.com/ar/develop/unity/quickstart-android
                           OR
        One Can Download apk from here: https://mega.nz/#!S1IS0KJY!49WvyXP-srXkrCv0d7vZghq-pMZO9LT1LJ04ApjYy64
+       
+       APK's Files: https://mega.nz/folder/HhIBwIoD#lYmYWNt7fRWTSOWmRq7biw
                                   
   
 #### After Deploying/Building the application, one can easily install it on any android device can play with it.
