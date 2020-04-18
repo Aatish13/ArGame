@@ -38,6 +38,14 @@ Deploying AR-Game
   Given a book (Tryst with Reality) whenever a particular image appears in front of this application, if in DB then it augments corresponding video.
   ![LiveBook](https://user-images.githubusercontent.com/42675676/79630758-b5d2cc80-8171-11ea-96b6-5d490a1e82f1.PNG)
 
+# ARGame ~ FaceT
+  Face Thoughts
+  This application scans your face and generate random thoughts and displays it.
+  
+# ARGame ~ KillHunt
+  This application is based on Virtual Reality (VR).
+  And modern version of classic game Duck Hunt.
+  Whenever a cube appears user needs to shoot it and it continues until final cube appears.
   
 
 ##### Note: Our application is further development of one of tutorials/pre-designed template designed Google ARCore
