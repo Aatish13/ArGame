@@ -36,7 +36,8 @@ Deploying AR-Game
 ## What Does it do??
   This application changes the way one reads book by augmenting videos to the book.
   Given a book (Tryst with Reality) whenever a particular image appears in front of this application, if in DB then it augments corresponding video.
-  
+  ![LiveBook](https://user-images.githubusercontent.com/42675676/79630758-b5d2cc80-8171-11ea-96b6-5d490a1e82f1.PNG)
+
   
 
 ##### Note: Our application is further development of one of tutorials/pre-designed template designed Google ARCore
