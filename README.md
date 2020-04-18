@@ -6,6 +6,8 @@ Deploying AR-Game
       https://developers.google.com/ar/develop/unity/quickstart-android
                           OR
        One Can Download apk from here: https://mega.nz/#!S1IS0KJY!49WvyXP-srXkrCv0d7vZghq-pMZO9LT1LJ04ApjYy64
+       
+       APK's Files: https://mega.nz/folder/HhIBwIoD#lYmYWNt7fRWTSOWmRq7biw
                                   
   
 #### After Deploying/Building the application, one can easily install it on any android device can play with it.
@@ -29,5 +31,34 @@ Deploying AR-Game
 
 ## Placing Anchor
 ![Anchor](https://user-images.githubusercontent.com/42675676/76992066-a729a780-6970-11ea-8f6f-21e11e31be09.jpeg)
+
+
+
+# ARGame ~ LiveBook
+## What Does it do??
+  This application changes the way one reads book by augmenting videos to the book.
+  Given a book (Tryst with Reality) whenever a particular image appears in front of this application, if in DB then it augments corresponding video.
+  ![LiveBook](https://user-images.githubusercontent.com/42675676/79630758-b5d2cc80-8171-11ea-96b6-5d490a1e82f1.PNG)
+
+# ARGame ~ FaceT
+  Face Thoughts.
+  #
+  This application scans your face and generate random thoughts and displays it.
+
+  ![S1](https://user-images.githubusercontent.com/42675676/79630899-cdf71b80-8172-11ea-8f00-48637ebe2a49.jpeg)
+
+# ARGame ~ KillShot
+  This application is based on Virtual Reality (VR).
+  And modern version of classic game Duck Hunt.
+  Whenever a cube appears user needs to shoot it and it continues until final cube appears.
+  
+  ![S1](https://user-images.githubusercontent.com/42675676/79630873-98eac900-8172-11ea-8790-ff48b7866341.jpeg)
+  
+  ![S2](https://user-images.githubusercontent.com/42675676/79630874-9ab48c80-8172-11ea-9cb0-42c64b57df74.jpeg)
+  
+  ![S3](https://user-images.githubusercontent.com/42675676/79630875-9be5b980-8172-11ea-8bbd-473e4a337052.jpeg)
+  
+  ![S4](https://user-images.githubusercontent.com/42675676/79630876-9c7e5000-8172-11ea-8706-f4a5ce80bc1b.jpeg)
+
 
 ##### Note: Our application is further development of one of tutorials/pre-designed template designed Google ARCore
