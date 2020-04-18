@@ -41,7 +41,9 @@ Deploying AR-Game
 # ARGame ~ FaceT
   Face Thoughts
   This application scans your face and generate random thoughts and displays it.
-  
+
+  ![S1](https://user-images.githubusercontent.com/42675676/79630899-cdf71b80-8172-11ea-8f00-48637ebe2a49.jpeg)
+
 # ARGame ~ KillShot
   This application is based on Virtual Reality (VR).
   And modern version of classic game Duck Hunt.
