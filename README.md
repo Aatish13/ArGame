@@ -39,6 +39,7 @@ Deploying AR-Game
   Face Thoughts.
   #
   This application scans your face and generate random thoughts and displays it.
+  #
 <img src="https://user-images.githubusercontent.com/42675676/79630899-cdf71b80-8172-11ea-8f00-48637ebe2a49.jpeg" width="250">
 
 
@@ -46,6 +47,10 @@ Deploying AR-Game
   This application is based on Virtual Reality (VR).
   And modern version of classic game Duck Hunt.
   Whenever a cube appears user needs to shoot it and it continues until final cube appears.
+  #
+ 
+  |   || 
+| ------------- | ------------- | 
   <img src="https://user-images.githubusercontent.com/42675676/79630873-98eac900-8172-11ea-8790-ff48b7866341.jpeg" Width="500">|<img src="https://user-images.githubusercontent.com/42675676/79630874-9ab48c80-8172-11ea-9cb0-42c64b57df74.jpeg" Width="500">
   
   <img src="https://user-images.githubusercontent.com/42675676/79630875-9be5b980-8172-11ea-8bbd-473e4a337052.jpeg" Width="500"> |<img src="https://user-images.githubusercontent.com/42675676/79630876-9c7e5000-8172-11ea-8706-f4a5ce80bc1b.jpeg" Width="500">
