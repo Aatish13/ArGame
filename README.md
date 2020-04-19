@@ -22,12 +22,15 @@ Deploying AR-Game
   - After placing an anchor point host places clues in their local area, these clues lead to another clue and that clue to another and these trail of clue goes on until a team member reaches it's intended destination and at last he/she can rewarded with some point.
 # Images
 
+| Home Screen  | Placing Anchor | Finding Chest |
+| ------------- | ------------- | ------------- |
+|<img src="https://github.com/Aatish13/ArGame/blob/master/ArTresureHunt/Screenshot_20200404-121313.jpg" width="220">  | <img src="https://github.com/Aatish13/ArGame/blob/master/ArTresureHunt/Screenshot_20200404-121456.jpg " width="220">  | <img src="https://github.com/Aatish13/ArGame/blob/master/ArTresureHunt/Screenshot_20200404-121355.jpg " width="220">|
 
- <img src="https://github.com/Aatish13/ArGame/blob/master/ArTresureHunt/Screenshot_20200404-121313.jpg" width="120">
  
-<img src="https://github.com/Aatish13/ArGame/blob/master/ArTresureHunt/Screenshot_20200404-121456.jpg " width="120">
+ 
 
-<img src="https://github.com/Aatish13/ArGame/blob/master/ArTresureHunt/Screenshot_20200404-121355.jpg " width="120">
+
+
 
 
 
