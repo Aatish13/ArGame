@@ -23,11 +23,11 @@ Deploying AR-Game
 # Images
 
 
- ![Room](https://github.com/Aatish13/ArGame/blob/master/ArTresureHunt/Screenshot_20200404-121313.jpg)
+ ![Room](https://github.com/Aatish13/ArGame/blob/master/ArTresureHunt/Screenshot_20200404-121313.jpg | width=100)
  
-![Map](https://user-images.githubusercontent.com/42675676/76992060-a3962080-6970-11ea-92ad-2e628f5ec4ca.jpeg)
+![Anchor](https://github.com/Aatish13/ArGame/blob/master/ArTresureHunt/Screenshot_20200404-121456.jpg | width=100 )
 
-![Anchor](https://user-images.githubusercontent.com/42675676/76992066-a729a780-6970-11ea-8f6f-21e11e31be09.jpeg)
+![Chest](https://github.com/Aatish13/ArGame/blob/master/ArTresureHunt/Screenshot_20200404-121355.jpg | width=100)
 
 
 
